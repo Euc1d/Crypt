@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cashInfoFragment"
+        android:icon="@drawable/ic_nal_24"
+        android:title="Cash" />
+    <item
+        android:id="@+id/nocashInfoFragment"
+        android:icon="@drawable/ic_nonal_24"
+        android:title="No Cash" />
+</menu>

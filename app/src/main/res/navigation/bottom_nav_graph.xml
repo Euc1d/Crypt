@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/cashInfoFragment">
+
+    <fragment
+        android:id="@+id/cashInfoFragment"
+        android:name="com.hfad.crypt.ui.CashInfoFragment"
+        android:label="fragment_cash_info"
+        tools:layout="@layout/fragment_cash_info" >
+        <action
+            android:id="@+id/action_cashInfoFragment_to_nocashInfoFragment"
+            app:destination="@id/nocashInfoFragment"
+            app:popUpTo="@id/cashInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nocashInfoFragment"
+        android:name="com.hfad.crypt.ui.NocashInfoFragment"
+        android:label="fragment_nocash_info"
+        tools:layout="@layout/fragment_nocash_info" />
+</navigation>
